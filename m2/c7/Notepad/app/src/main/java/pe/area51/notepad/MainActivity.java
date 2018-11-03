@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements FragmentList.Frag
             por primera vez.
              */
             fragmentList = new FragmentList();
+            fragmentList.setRetainInstance(true);
             fragmentManager
                     .beginTransaction()
                     .replace(R.id.fragmentContainer, fragmentList)
